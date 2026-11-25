@@ -1,0 +1,1325 @@
+{
+    "info":  {
+                 "_postman_id":  "feb517a6-1ca4-47d5-be7f-cb4de305efe0",
+                 "name":  "clinic-quiz",
+                 "schema":  "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+             },
+    "item":  [
+                 {
+                     "name":  "getalloffices",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/offices/all",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "offices",
+                                                              "all"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "getalldoctors",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/doctors/all",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "doctors",
+                                                              "all"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "getallpatients",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/patients/all",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "patients",
+                                                              "all"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "getallspecializations",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/specializations/all",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "specializations",
+                                                              "all"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "getallappointments",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/appointments/all",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "appointments",
+                                                              "all"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "saveoffice",
+                     "request":  {
+                                     "method":  "POST",
+                                     "header":  [
+
+                                                ],
+                                     "body":  {
+                                                  "mode":  "raw",
+                                                  "raw":  "{\"name\": \"Downtown\", \"buildingName\": \"Tower A\", \"officeNumber\": 201}",
+                                                  "options":  {
+                                                                  "raw":  {
+                                                                              "language":  "json"
+                                                                          }
+                                                              }
+                                              },
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/offices/save",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "offices",
+                                                              "save"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "savespecialization",
+                     "request":  {
+                                     "method":  "POST",
+                                     "header":  [
+
+                                                ],
+                                     "body":  {
+                                                  "mode":  "raw",
+                                                  "raw":  "{\"name\": \"Neurology\"}",
+                                                  "options":  {
+                                                                  "raw":  {
+                                                                              "language":  "json"
+                                                                          }
+                                                              }
+                                              },
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/specializations/save",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "specializations",
+                                                              "save"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "savedoctor",
+                     "request":  {
+                                     "method":  "POST",
+                                     "header":  [
+
+                                                ],
+                                     "body":  {
+                                                  "mode":  "raw",
+                                                  "raw":  "{\"firstName\": \"Alice\", \"lastName\": \"Niyonsenga\", \"dateOfBirth\": \"1988-02-14\"}",
+                                                  "options":  {
+                                                                  "raw":  {
+                                                                              "language":  "json"
+                                                                          }
+                                                              }
+                                              },
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/doctors/save",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "doctors",
+                                                              "save"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "savedoctorwithoffice",
+                     "request":  {
+                                     "method":  "POST",
+                                     "header":  [
+
+                                                ],
+                                     "body":  {
+                                                  "mode":  "raw",
+                                                  "raw":  "{\"firstName\": \"Bob\", \"lastName\": \"Habyimana\", \"dateOfBirth\": \"1992-05-30\", \"office\": {\"id\": \"OFFICEID\"}}",
+                                                  "options":  {
+                                                                  "raw":  {
+                                                                              "language":  "json"
+                                                                          }
+                                                              }
+                                              },
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/doctors/save",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "doctors",
+                                                              "save"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "savepatient",
+                     "request":  {
+                                     "method":  "POST",
+                                     "header":  [
+
+                                                ],
+                                     "body":  {
+                                                  "mode":  "raw",
+                                                  "raw":  "{\"firstName\": \"Claude\", \"lastName\": \"Mutesi\", \"dateOfBirth\": \"1995-08-19\"}",
+                                                  "options":  {
+                                                                  "raw":  {
+                                                                              "language":  "json"
+                                                                          }
+                                                              }
+                                              },
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/patients/save",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "patients",
+                                                              "save"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "saveappointment",
+                     "request":  {
+                                     "method":  "POST",
+                                     "header":  [
+
+                                                ],
+                                     "body":  {
+                                                  "mode":  "raw",
+                                                  "raw":  "{\"appointmentDate\": \"2026-11-05\", \"reason\": \"headache\", \"status\": \"SCHEDULED\", \"patient\": {\"id\": \"PATIENTID\"}, \"doctor\": {\"id\": \"DOCTORID\"}}",
+                                                  "options":  {
+                                                                  "raw":  {
+                                                                              "language":  "json"
+                                                                          }
+                                                              }
+                                              },
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/appointments/save",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "appointments",
+                                                              "save"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "updateoffice",
+                     "request":  {
+                                     "method":  "PUT",
+                                     "header":  [
+
+                                                ],
+                                     "body":  {
+                                                  "mode":  "raw",
+                                                  "raw":  "{\"name\": \"Uptown\", \"buildingName\": \"Tower B\", \"officeNumber\": 301}",
+                                                  "options":  {
+                                                                  "raw":  {
+                                                                              "language":  "json"
+                                                                          }
+                                                              }
+                                              },
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/offices/update/OFFICEID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "offices",
+                                                              "update",
+                                                              "OFFICEID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "updatedoctor",
+                     "request":  {
+                                     "method":  "PUT",
+                                     "header":  [
+
+                                                ],
+                                     "body":  {
+                                                  "mode":  "raw",
+                                                  "raw":  "{\"firstName\": \"Alice\", \"lastName\": \"Niyonsenga\", \"dateOfBirth\": \"1988-02-14\", \"office\": {\"id\": \"OFFICEID\"}}",
+                                                  "options":  {
+                                                                  "raw":  {
+                                                                              "language":  "json"
+                                                                          }
+                                                              }
+                                              },
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/doctors/update/DOCTORID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "doctors",
+                                                              "update",
+                                                              "DOCTORID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "updatepatient",
+                     "request":  {
+                                     "method":  "PUT",
+                                     "header":  [
+
+                                                ],
+                                     "body":  {
+                                                  "mode":  "raw",
+                                                  "raw":  "{\"firstName\": \"Claude\", \"lastName\": \"Mutesi\", \"dateOfBirth\": \"1995-08-19\"}",
+                                                  "options":  {
+                                                                  "raw":  {
+                                                                              "language":  "json"
+                                                                          }
+                                                              }
+                                              },
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/patients/update/PATIENTID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "patients",
+                                                              "update",
+                                                              "PATIENTID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "a1patientsbylastname",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/patients/by-last-name?lastName=uwase",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "patients",
+                                                              "by-last-name"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "lastName",
+                                                                   "value":  "uwase"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "a2appointmentsbystatus",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/appointments/by-status?status=SCHEDULED",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "appointments",
+                                                              "by-status"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "status",
+                                                                   "value":  "SCHEDULED"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "a3appointmentsbetween",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/appointments/between?start=2026-10-01\u0026end=2026-12-31",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "appointments",
+                                                              "between"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "start",
+                                                                   "value":  "2026-10-01"
+                                                               },
+                                                               {
+                                                                   "key":  "end",
+                                                                   "value":  "2026-12-31"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "b1doctorsbyspecialization",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/doctors/by-specialization?name=cardiology",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "doctors",
+                                                              "by-specialization"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "name",
+                                                                   "value":  "cardiology"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "b2doctorswithoutoffice",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/doctors/without-office",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "doctors",
+                                                              "without-office"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "b3unusedspecializations",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/specializations/unused",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "specializations",
+                                                              "unused"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "b4patientsofdoctor",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/patients/of-doctor/DOCTORID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "patients",
+                                                              "of-doctor",
+                                                              "DOCTORID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "c1appointmentsbystatuscount",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/appointments/stats/by-status",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "appointments",
+                                                              "stats",
+                                                              "by-status"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "c2frequentpatients",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/patients/frequent?min=2",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "patients",
+                                                              "frequent"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "min",
+                                                                   "value":  "2"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "c3busiestoffice",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/offices/busiest",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "offices",
+                                                              "busiest"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "c4cancelappointmentsonday",
+                     "request":  {
+                                     "method":  "PATCH",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/appointments/cancel-day?doctorId=DOCTORID\u0026date=2026-10-20",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "appointments",
+                                                              "cancel-day"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "doctorId",
+                                                                   "value":  "DOCTORID"
+                                                               },
+                                                               {
+                                                                   "key":  "date",
+                                                                   "value":  "2026-10-20"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "bonus1appointmentspage",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/appointments/page?page=0\u0026size=5\u0026sort=appointmentDate,desc",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "appointments",
+                                                              "page"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "page",
+                                                                   "value":  "0"
+                                                               },
+                                                               {
+                                                                   "key":  "size",
+                                                                   "value":  "5"
+                                                               },
+                                                               {
+                                                                   "key":  "sort",
+                                                                   "value":  "appointmentDate,desc"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "bonus2deletecancelledbefore",
+                     "request":  {
+                                     "method":  "DELETE",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/appointments/cancelled-before?date=2026-09-01",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "appointments",
+                                                              "cancelled-before"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "date",
+                                                                   "value":  "2026-09-01"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "finddoctorbyfirstname",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/doctors/find/firstName?firstName=Aline",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "doctors",
+                                                              "find",
+                                                              "firstName"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "firstName",
+                                                                   "value":  "Aline"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "finddoctorbylastname",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/doctors/find/lastName?lastName=Mukamana",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "doctors",
+                                                              "find",
+                                                              "lastName"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "lastName",
+                                                                   "value":  "Mukamana"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "finddoctorbyname",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/doctors/find/name?firstName=Aline\u0026lastName=Mukamana",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "doctors",
+                                                              "find",
+                                                              "name"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "firstName",
+                                                                   "value":  "Aline"
+                                                               },
+                                                               {
+                                                                   "key":  "lastName",
+                                                                   "value":  "Mukamana"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "finddoctorsbyspecializationid",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/doctors/find/specialization/SPECIALIZATIONID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "doctors",
+                                                              "find",
+                                                              "specialization",
+                                                              "SPECIALIZATIONID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "findpatientbyfirstname",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/patients/find/firstName?firstName=Divine",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "patients",
+                                                              "find",
+                                                              "firstName"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "firstName",
+                                                                   "value":  "Divine"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "findpatientbyname",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/patients/find/name?firstName=Divine\u0026lastName=Uwase",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "patients",
+                                                              "find",
+                                                              "name"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "firstName",
+                                                                   "value":  "Divine"
+                                                               },
+                                                               {
+                                                                   "key":  "lastName",
+                                                                   "value":  "Uwase"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "findofficebyname",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/offices/find/name?name=Kigali",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "offices",
+                                                              "find",
+                                                              "name"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "name",
+                                                                   "value":  "Kigali"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "findofficeofdoctor",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/offices/find/doctor/DOCTORID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "offices",
+                                                              "find",
+                                                              "doctor",
+                                                              "DOCTORID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "findspecializationbyname",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/specializations/find/name?name=Cardiology",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "specializations",
+                                                              "find",
+                                                              "name"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "name",
+                                                                   "value":  "Cardiology"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "appointmentsbypatient",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/appointments/find/patient/PATIENTID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "appointments",
+                                                              "find",
+                                                              "patient",
+                                                              "PATIENTID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "appointmentsbydoctor",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/appointments/find/doctor/DOCTORID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "appointments",
+                                                              "find",
+                                                              "doctor",
+                                                              "DOCTORID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "getofficebyid",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/offices/OFFICEID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "offices",
+                                                              "OFFICEID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "getdoctorbyid",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/doctors/DOCTORID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "doctors",
+                                                              "DOCTORID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "getpatientbyid",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/patients/PATIENTID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "patients",
+                                                              "PATIENTID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "getspecializationbyid",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/specializations/SPECIALIZATIONID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "specializations",
+                                                              "SPECIALIZATIONID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "getappointmentbyid",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/appointments/APPOINTMENTID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "appointments",
+                                                              "APPOINTMENTID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "deleteappointment",
+                     "request":  {
+                                     "method":  "DELETE",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8082/api/appointments/delete/APPOINTMENTID",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8082",
+                                                 "path":  [
+                                                              "api",
+                                                              "appointments",
+                                                              "delete",
+                                                              "APPOINTMENTID"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 }
+             ]
+}
